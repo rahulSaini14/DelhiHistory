@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80FF4500"
+    tools:context="com.example.android.delhihistory.Screen2Fragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="0dp"
+           android:background="@drawable/historicalview"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#80FFFFFF">
+
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="?android:attr/selectableItemBackground"
+                   android:onClick="historical"
+                   android:text="@string/Historical_Places"
+                   android:textColor="#2196F3"
+                   android:textSize="40sp"
+                   android:textStyle="bold" />
+           </FrameLayout>
+       </FrameLayout>
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="0dp"
+           android:background="@drawable/gallery"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="10dp">
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#80FFFFFF">
+
+               <Button
+                   android:id="@+id/button"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="?android:attr/selectableItemBackground"
+                   android:onClick="gallery"
+                   android:text="@string/Gallery"
+                   android:textColor="#ffffff"
+                   android:textSize="60sp"
+                   android:textStyle="bold" />
+           </FrameLayout>
+       </FrameLayout>
+   </LinearLayout>
+
+</FrameLayout>

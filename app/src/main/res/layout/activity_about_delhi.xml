@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/bigview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELHI"
+            android:textColor="#FF4500"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nightmode"
+            android:text="Night mode"
+            android:textColor="#B8860B"
+            android:id="@+id/chk"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="largetext"
+            android:id="@+id/chk2"
+            android:text="Larg text"
+            android:textColor="#B8860B" />
+
+        <TextView
+            android:id="@+id/textdelhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="@string/aboutdelhicontent"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</ScrollView>

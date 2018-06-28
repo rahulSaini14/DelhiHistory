@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.delhihistory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_delhi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_delhi"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="Menu"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".historicalplaces"
+            android:label="@string/Historical_Places"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".aboutDelhi"
+            android:label="@string/About_Delhi"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Gallery"
+            android:label="@string/Gallery"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Links"
+            android:label="@string/important_links"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".settings"
+            android:label="@string/Settings"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".aboutus"
+            android:label="@string/About_us"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Map"
+            android:label="@string/map"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

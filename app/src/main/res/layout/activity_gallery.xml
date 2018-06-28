@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollgallery"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Images"
+            android:textColor="#FF4500"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/nightmodegallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nightmodegallery"
+            android:text="Night mode"
+            android:textColor="#B8860B" />
+
+        <ImageView
+            android:id="@+id/nxtimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="nextimage"
+            android:src="@drawable/g_indiagate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="click on image for next"
+            android:textAlignment="center"
+            android:textColor="#B8860B" />
+    </LinearLayout>
+</ScrollView>

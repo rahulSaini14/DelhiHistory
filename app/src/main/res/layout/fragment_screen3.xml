@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80FF4500"
+    tools:context="com.example.android.delhihistory.Screen3Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/settings">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#80FFFFFF">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:onClick="setting"
+                        android:text="@string/Settings"
+                        android:textColor="#64FFDA"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shareapp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80FFFFFF">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:onClick="share"
+                        android:text="@string/Share_App"
+                        android:textColor="#FFA500"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/many_places"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80FFFFFF">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="otherapp"
+                    android:text="@string/More_apps"
+                    android:textColor="#A0522D"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/humanlogo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#80FFFFFF">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="aboutus"
+                    android:text="@string/About_us"
+                    android:textColor="#800080"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    </FrameLayout>
